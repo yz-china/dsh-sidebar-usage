@@ -1,0 +1,70 @@
+{
+  "name": "dsh-sidebar-usage",
+  "version": "1.0.0",
+  "description": "Sidebar usage HUD for DeepSeek Harness: provider balance / subscription quota, cumulative tokens & calls, drag-to-resize card, hover-out drawer that collects bottom-bar entries.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yz-china/dsh-sidebar-usage.git"
+  },
+  "homepage": "https://github.com/yz-china/dsh-sidebar-usage#readme",
+  "bugs": {
+    "url": "https://github.com/yz-china/dsh-sidebar-usage/issues"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "files": [
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "screenshot.png",
+    "screenshot2.png",
+    "screenshots.json"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-credentials": "^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-rc.2",
+    "@deepseek-ai/dsh-host-webserver": "^0.1.0-rc.6 || ^0.2.0-rc.1 || ^0.2.1-rc.2",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "usage",
+    "balance",
+    "quota",
+    "sidebar",
+    "hud",
+    "new-api"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "author": {
+    "name": "yz-china",
+    "url": "https://github.com/yz-china"
+  }
+}
