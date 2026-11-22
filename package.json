@@ -1,6 +1,6 @@
 {
   "name": "dsh-sidebar-usage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sidebar usage HUD for DeepSeek Harness: provider balance / subscription quota, cumulative tokens & calls, drag-to-resize card, hover-out drawer that collects bottom-bar entries.",
   "type": "module",
   "main": "lib/index.js",
